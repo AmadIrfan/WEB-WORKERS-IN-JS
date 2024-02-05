@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Web workers</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: black;
+            }
+
+            .header {
+                text-align: center;
+                color: green;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .btn {
+                background-color: green;
+                padding: 10px;
+                color: white;
+                cursor: pointer;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+
+            .space {
+                height: 20px;
+            }
+
+            table {
+                border: 1px solid black;
+            }
+
+            tr {
+                border: 1px solid black;
+            }
+
+            th {
+                font-size: 25px;
+                border: 1px solid black;
+                padding: 5px 10px;
+            }
+
+            td {
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .table-show {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            label {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">API DATA FETCH AND SORTING</di>
+            <div class="btn-group">
+                <button id="btn1" class="btn">Without Web Workers</button>
+                <button id="btn2" class="btn">With Web Workers</button>
+            </div>
+            <div class="time-show">
+                <label for="timer">Time Taken</label>
+                <input id="time" type="text" placeholder="Time">
+            </div>
+            <div class="space"></div>
+            <div class="table-show">
+            </div>
+
+            <script src="script.js"></script>
+    </body>
+
+</html>
